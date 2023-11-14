@@ -23,14 +23,14 @@ Partial Class Form2
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Form2))
-        Label1 = New Label()
+        lbltitleofcontext = New Label()
         bedroom = New PictureBox()
         cbsearchf2 = New Button()
         cbgobackf2 = New Button()
         cb3f2 = New Button()
         cb1f2 = New Button()
         cb2f2 = New Button()
-        RichTextBox1 = New RichTextBox()
+        rbcontext = New RichTextBox()
         kitchen = New PictureBox()
         backyard = New PictureBox()
         shed = New PictureBox()
@@ -54,7 +54,7 @@ Partial Class Form2
         TextBox10 = New TextBox()
         TextBox11 = New TextBox()
         TextBox12 = New TextBox()
-        Button1 = New Button()
+        cbtheescape = New Button()
         CType(bedroom, ComponentModel.ISupportInitialize).BeginInit()
         CType(kitchen, ComponentModel.ISupportInitialize).BeginInit()
         CType(backyard, ComponentModel.ISupportInitialize).BeginInit()
@@ -68,17 +68,17 @@ Partial Class Form2
         CType(basement, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
-        ' Label1
+        ' lbltitleofcontext
         ' 
-        Label1.AutoSize = True
-        Label1.BackColor = Color.Black
-        Label1.Font = New Font("Segoe UI", 16.128F, FontStyle.Bold Or FontStyle.Italic Or FontStyle.Underline, GraphicsUnit.Point)
-        Label1.ForeColor = SystemColors.ControlLightLight
-        Label1.Location = New Point(616, 35)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(136, 38)
-        Label1.TabIndex = 0
-        Label1.Text = "Bedroom"
+        lbltitleofcontext.AutoSize = True
+        lbltitleofcontext.BackColor = Color.Black
+        lbltitleofcontext.Font = New Font("Segoe UI", 16.128F, FontStyle.Bold Or FontStyle.Italic Or FontStyle.Underline, GraphicsUnit.Point)
+        lbltitleofcontext.ForeColor = SystemColors.ControlLightLight
+        lbltitleofcontext.Location = New Point(616, 35)
+        lbltitleofcontext.Name = "lbltitleofcontext"
+        lbltitleofcontext.Size = New Size(136, 38)
+        lbltitleofcontext.TabIndex = 0
+        lbltitleofcontext.Text = "Bedroom"
         ' 
         ' bedroom
         ' 
@@ -149,15 +149,15 @@ Partial Class Form2
         cb2f2.Text = "Door 2"
         cb2f2.UseVisualStyleBackColor = False
         ' 
-        ' RichTextBox1
+        ' rbcontext
         ' 
-        RichTextBox1.BackColor = Color.Black
-        RichTextBox1.ForeColor = Color.White
-        RichTextBox1.Location = New Point(591, 76)
-        RichTextBox1.Name = "RichTextBox1"
-        RichTextBox1.Size = New Size(198, 282)
-        RichTextBox1.TabIndex = 9
-        RichTextBox1.Text = "This is the room you wake up in, you don't know how you got here but you know you have to escape! You can see the three doors, they dont lead to the same space but connected throught these doors!"
+        rbcontext.BackColor = Color.Black
+        rbcontext.ForeColor = Color.White
+        rbcontext.Location = New Point(591, 76)
+        rbcontext.Name = "rbcontext"
+        rbcontext.Size = New Size(198, 282)
+        rbcontext.TabIndex = 9
+        rbcontext.Text = "This is the room you wake up in, you don't know how you got here but you know you have to escape! You can see the three doors, they dont lead to the same space but connected throught these doors!"
         ' 
         ' kitchen
         ' 
@@ -359,18 +359,18 @@ Partial Class Form2
         TextBox12.TabIndex = 33
         TextBox12.Visible = False
         ' 
-        ' Button1
+        ' cbtheescape
         ' 
-        Button1.BackColor = Color.Black
-        Button1.Font = New Font("Century Gothic", 21.8879986F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point)
-        Button1.ForeColor = SystemColors.ControlLightLight
-        Button1.Location = New Point(253, 331)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(199, 108)
-        Button1.TabIndex = 34
-        Button1.Text = "Escape"
-        Button1.UseVisualStyleBackColor = False
-        Button1.Visible = False
+        cbtheescape.BackColor = Color.Black
+        cbtheescape.Font = New Font("Century Gothic", 21.8879986F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point)
+        cbtheescape.ForeColor = SystemColors.ControlLightLight
+        cbtheescape.Location = New Point(253, 331)
+        cbtheescape.Name = "cbtheescape"
+        cbtheescape.Size = New Size(199, 108)
+        cbtheescape.TabIndex = 34
+        cbtheescape.Text = "Escape"
+        cbtheescape.UseVisualStyleBackColor = False
+        cbtheescape.Visible = False
         ' 
         ' Form2
         ' 
@@ -378,7 +378,7 @@ Partial Class Form2
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.Black
         ClientSize = New Size(800, 493)
-        Controls.Add(Button1)
+        Controls.Add(cbtheescape)
         Controls.Add(TextBox12)
         Controls.Add(TextBox11)
         Controls.Add(TextBox10)
@@ -402,14 +402,14 @@ Partial Class Form2
         Controls.Add(shed)
         Controls.Add(backyard)
         Controls.Add(kitchen)
-        Controls.Add(RichTextBox1)
+        Controls.Add(rbcontext)
         Controls.Add(cb2f2)
         Controls.Add(cb1f2)
         Controls.Add(cb3f2)
         Controls.Add(cbgobackf2)
         Controls.Add(cbsearchf2)
         Controls.Add(bedroom)
-        Controls.Add(Label1)
+        Controls.Add(lbltitleofcontext)
         Name = "Form2"
         Text = "The Escape"
         CType(bedroom, ComponentModel.ISupportInitialize).EndInit()
@@ -427,15 +427,15 @@ Partial Class Form2
         PerformLayout()
     End Sub
 
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Label1 As Label
+    Friend WithEvents cbtheescape As Button
+    Friend WithEvents lbltitleofcontext As Label
     Friend WithEvents bedroom As PictureBox
     Friend WithEvents cbsearchf2 As Button
     Friend WithEvents cbgobackf2 As Button
     Friend WithEvents cb3f2 As Button
     Friend WithEvents cb1f2 As Button
     Friend WithEvents cb2f2 As Button
-    Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents rbcontext As RichTextBox
     Friend WithEvents kitchen As PictureBox
     Friend WithEvents backyard As PictureBox
     Friend WithEvents shed As PictureBox

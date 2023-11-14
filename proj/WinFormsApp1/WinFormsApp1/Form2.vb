@@ -25,8 +25,8 @@
 
     Private Function UpdateRoomData()
         If bedroom.Visible = True Then
-            Label1.Text = "Bedroom"
-            RichTextBox1.Text = "This is the room you wake up in, you don't know how you got here but you know you have to escape! You can see the three doors, they dont lead to the same space but connected throught these doors!"
+            lbltitleofcontext.Text = "Bedroom"
+            rbcontext.Text = "This is the room you wake up in, you don't know how you got here but you know you have to escape! You can see the three doors, they dont lead to the same space but connected throught these doors!"
             cb1f2.Text = "Door 1"
             cb2f2.Text = "Door 2"
             cb3f2.Text = "Door 3"
@@ -36,8 +36,8 @@
             cb4f2.Visible = False
 
         ElseIf kitchen.Visible = True Then
-            Label1.Text = "Kitchen"
-            RichTextBox1.Text = "Messy and unusual looking kitchen!"
+            lbltitleofcontext.Text = "Kitchen"
+            rbcontext.Text = "Messy and unusual looking kitchen!"
             cb1f2.Visible = True
             cb2f2.Visible = False
             cb3f2.Visible = False
@@ -45,8 +45,8 @@
             cb1f2.Text = "Enter backyard"
 
         ElseIf backyard.Visible = True Then
-            Label1.Text = "Backyard"
-            RichTextBox1.Text = "You can feel the breeze.... the fog that cover teh forest seem pretty dangerous, escaping with a veichle throught the fog is a good idea!"
+            lbltitleofcontext.Text = "Backyard"
+            rbcontext.Text = "You can feel the breeze.... the fog that cover teh forest seem pretty dangerous, escaping with a veichle throught the fog is a good idea!"
             cb1f2.Visible = True
             cb2f2.Visible = False
             cb3f2.Visible = False
@@ -54,8 +54,8 @@
             cb1f2.Text = "Enter shed"
 
         ElseIf shed.Visible = True Then
-            Label1.Text = "Shed"
-            RichTextBox1.Text = "A shed with an old car that is out of fuel."
+            lbltitleofcontext.Text = "Shed"
+            rbcontext.Text = "A shed with an old car that is out of fuel."
             cb1f2.Visible = False
             cb2f2.Visible = False
             cb3f2.Visible = False
@@ -63,8 +63,8 @@
 
 
         ElseIf ladder.Visible = True Then
-            Label1.Text = "Ladder"
-            RichTextBox1.Text = "A ladder to the attic!"
+            lbltitleofcontext.Text = "Ladder"
+            rbcontext.Text = "A ladder to the attic!"
             cb1f2.Visible = False
             cb4f2.Visible = True
             cb3f2.Visible = False
@@ -72,16 +72,16 @@
             cb2f2.Text = "Climb"
 
         ElseIf attic.Visible = True Then
-            Label1.Text = "Attic"
-            RichTextBox1.Text = ""
+            lbltitleofcontext.Text = "Attic"
+            rbcontext.Text = ""
             cb1f2.Visible = False
             cb2f2.Visible = False
             cb3f2.Visible = False
             cb4f2.Visible = False
 
         ElseIf stair.Visible = True Then
-            Label1.Text = "Stair"
-            RichTextBox1.Text = "A stair that's going down!"
+            lbltitleofcontext.Text = "Stair"
+            rbcontext.Text = "A stair that's going down!"
             cb1f2.Visible = False
             cb2f2.Visible = False
             cb3f2.Visible = True
@@ -89,8 +89,8 @@
             cb3f2.Text = "Go downstair"
 
         ElseIf downstair.Visible = True Then
-            Label1.Text = "Downstair"
-            RichTextBox1.Text = "Downstair of the house"
+            lbltitleofcontext.Text = "Downstair"
+            rbcontext.Text = "Downstair of the house"
             cb1f2.Visible = False
             cb2f2.Visible = False
             cb3f2.Visible = True
@@ -98,24 +98,24 @@
             cb3f2.Text = "Get close to door"
 
         ElseIf mainentrance.Visible = True Then
-            Label1.Text = "Main Entrance"
-            RichTextBox1.Text = "The main entrance door"
+            lbltitleofcontext.Text = "Main Entrance"
+            rbcontext.Text = "The main entrance door"
             cb1f2.Visible = False
             cb2f2.Visible = False
             cb3f2.Visible = False
             cb4f2.Visible = False
 
         ElseIf basement.Visible = True Then
-            Label1.Text = "Basement"
-            RichTextBox1.Text = ""
+            lbltitleofcontext.Text = "Basement"
+            rbcontext.Text = ""
             cb1f2.Visible = False
             cb2f2.Visible = False
             cb3f2.Visible = False
             cb4f2.Visible = False
 
         ElseIf outside.Visible = True Then
-            Label1.Text = "Outside"
-            RichTextBox1.Text = ""
+            lbltitleofcontext.Text = "Outside"
+            rbcontext.Text = ""
             cb1f2.Visible = False
             cb2f2.Visible = False
             cb3f2.Visible = False
@@ -214,10 +214,10 @@
                     TextBox7.Text = "main key"
                     lblresult.Text = "You smash the wooden cube with hammer cuz of ur gut feeling and fiund the main key!"
                     cbgobackf2.Visible = False
-                    Label1.Visible = False
-                    RichTextBox1.Visible = False
+                    lbltitleofcontext.Visible = False
+                    rbcontext.Visible = False
                     cbsearchf2.Visible = False
-                    Button1.Visible = True
+                    cbtheescape.Visible = True
 
                 End If
             End If
@@ -236,22 +236,6 @@
 
     End Function
 
-
-    Private Sub cbinventory_Click(sender As Object, e As EventArgs) Handles cbinventory.Click
-        Dim f3 As New Form3
-        f3.Pass1 = TextBox1.Text
-        f3.Pass2 = TextBox3.Text
-        f3.Pass3 = TextBox4.Text
-        f3.Pass4 = TextBox5.Text
-        f3.Pass5 = TextBox6.Text
-        f3.Pass6 = TextBox7.Text
-        f3.Pass7 = TextBox8.Text
-        f3.Pass8 = TextBox9.Text
-        f3.Pass9 = TextBox10.Text
-        f3.Pass10 = TextBox11.Text
-        f3.Show()
-        Me.Hide()
-    End Sub
 
     Private Sub cb1f2_Click(sender As Object, e As EventArgs) Handles cb1f2.Click
         If bedroom.Visible = True Then
@@ -325,7 +309,7 @@
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles cbtheescape.Click
         Dim f5 As New Form5
         f5.Show()
         Me.Hide()

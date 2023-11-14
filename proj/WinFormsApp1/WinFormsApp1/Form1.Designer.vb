@@ -25,7 +25,7 @@ Partial Class Form1
         Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Form1))
         cbstartf1 = New Button()
         cbexitf1 = New Button()
-        Label1 = New Label()
+        lbltitle = New Label()
         PictureBox1 = New PictureBox()
         PictureBox2 = New PictureBox()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -56,16 +56,16 @@ Partial Class Form1
         cbexitf1.Text = "Exit"
         cbexitf1.UseVisualStyleBackColor = False
         ' 
-        ' Label1
+        ' lbltitle
         ' 
-        Label1.AutoSize = True
-        Label1.Font = New Font("Showcard Gothic", 24.192F, FontStyle.Regular, GraphicsUnit.Point)
-        Label1.ForeColor = Color.White
-        Label1.Location = New Point(226, 100)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(313, 52)
-        Label1.TabIndex = 2
-        Label1.Text = "The Escape!!!"
+        lbltitle.AutoSize = True
+        lbltitle.Font = New Font("Showcard Gothic", 24.192F, FontStyle.Regular, GraphicsUnit.Point)
+        lbltitle.ForeColor = Color.White
+        lbltitle.Location = New Point(226, 100)
+        lbltitle.Name = "lbltitle"
+        lbltitle.Size = New Size(313, 52)
+        lbltitle.TabIndex = 2
+        lbltitle.Text = "The Escape!!!"
         ' 
         ' PictureBox1
         ' 
@@ -94,7 +94,7 @@ Partial Class Form1
         ClientSize = New Size(796, 448)
         Controls.Add(PictureBox2)
         Controls.Add(PictureBox1)
-        Controls.Add(Label1)
+        Controls.Add(lbltitle)
         Controls.Add(cbexitf1)
         Controls.Add(cbstartf1)
         Name = "Form1"
@@ -107,7 +107,7 @@ Partial Class Form1
 
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
-    Friend WithEvents Label1 As Label
+    Friend WithEvents lbltitle As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents cbstartf1 As Button

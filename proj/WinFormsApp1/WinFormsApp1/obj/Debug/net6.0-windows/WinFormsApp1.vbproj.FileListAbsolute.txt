@@ -55,3 +55,5 @@ D:\codes\proj\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\refint\WinForms
 D:\codes\proj\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.pdb
 D:\codes\proj\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.genruntimeconfig.cache
 D:\codes\proj\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\ref\WinFormsApp1.dll
+D:\codes\proj\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Form4.resources
+D:\codes\proj\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Form5.resources

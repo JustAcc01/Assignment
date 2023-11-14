@@ -23,29 +23,29 @@ Partial Class Form5
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Form5))
-        basement = New PictureBox()
-        Label1 = New Label()
-        CType(basement, ComponentModel.ISupportInitialize).BeginInit()
+        Outside = New PictureBox()
+        lblquestionmark = New Label()
+        CType(Outside, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
-        ' basement
+        ' Outside
         ' 
-        basement.Image = CType(resources.GetObject("basement.Image"), Image)
-        basement.Location = New Point(172, 12)
-        basement.Name = "basement"
-        basement.Size = New Size(441, 274)
-        basement.TabIndex = 20
-        basement.TabStop = False
+        Outside.Image = CType(resources.GetObject("Outside.Image"), Image)
+        Outside.Location = New Point(172, 12)
+        Outside.Name = "Outside"
+        Outside.Size = New Size(441, 274)
+        Outside.TabIndex = 20
+        Outside.TabStop = False
         ' 
-        ' Label1
+        ' lblquestionmark
         ' 
-        Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 28.223999F, FontStyle.Bold, GraphicsUnit.Point)
-        Label1.Location = New Point(347, 311)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(91, 66)
-        Label1.TabIndex = 21
-        Label1.Text = "???"
+        lblquestionmark.AutoSize = True
+        lblquestionmark.Font = New Font("Segoe UI", 28.223999F, FontStyle.Bold, GraphicsUnit.Point)
+        lblquestionmark.Location = New Point(347, 311)
+        lblquestionmark.Name = "lblquestionmark"
+        lblquestionmark.Size = New Size(91, 66)
+        lblquestionmark.TabIndex = 21
+        lblquestionmark.Text = "???"
         ' 
         ' Form5
         ' 
@@ -53,16 +53,16 @@ Partial Class Form5
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.Black
         ClientSize = New Size(800, 450)
-        Controls.Add(Label1)
-        Controls.Add(basement)
+        Controls.Add(lblquestionmark)
+        Controls.Add(Outside)
         ForeColor = SystemColors.ControlLightLight
         Name = "Form5"
         Text = "Escape"
-        CType(basement, ComponentModel.ISupportInitialize).EndInit()
+        CType(Outside, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
 
-    Friend WithEvents basement As PictureBox
-    Friend WithEvents Label1 As Label
+    Friend WithEvents Outside As PictureBox
+    Friend WithEvents lblquestionmark As Label
 End Class

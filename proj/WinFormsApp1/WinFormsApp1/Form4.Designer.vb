@@ -23,29 +23,29 @@ Partial Class Form4
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Form4))
-        Label1 = New Label()
-        basement = New PictureBox()
-        CType(basement, ComponentModel.ISupportInitialize).BeginInit()
+        lblcarescape = New Label()
+        road = New PictureBox()
+        CType(road, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
-        ' Label1
+        ' lblcarescape
         ' 
-        Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 28.223999F, FontStyle.Bold, GraphicsUnit.Point)
-        Label1.Location = New Point(226, 315)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(336, 66)
-        Label1.TabIndex = 0
-        Label1.Text = "Car Escape :>"
+        lblcarescape.AutoSize = True
+        lblcarescape.Font = New Font("Segoe UI", 28.223999F, FontStyle.Bold, GraphicsUnit.Point)
+        lblcarescape.Location = New Point(226, 315)
+        lblcarescape.Name = "lblcarescape"
+        lblcarescape.Size = New Size(336, 66)
+        lblcarescape.TabIndex = 0
+        lblcarescape.Text = "Car Escape :>"
         ' 
-        ' basement
+        ' road
         ' 
-        basement.Image = CType(resources.GetObject("basement.Image"), Image)
-        basement.Location = New Point(157, 12)
-        basement.Name = "basement"
-        basement.Size = New Size(441, 274)
-        basement.TabIndex = 20
-        basement.TabStop = False
+        road.Image = CType(resources.GetObject("road.Image"), Image)
+        road.Location = New Point(157, 12)
+        road.Name = "road"
+        road.Size = New Size(441, 274)
+        road.TabIndex = 20
+        road.TabStop = False
         ' 
         ' Form4
         ' 
@@ -53,16 +53,16 @@ Partial Class Form4
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.Black
         ClientSize = New Size(800, 450)
-        Controls.Add(basement)
-        Controls.Add(Label1)
+        Controls.Add(road)
+        Controls.Add(lblcarescape)
         ForeColor = SystemColors.ControlLightLight
         Name = "Form4"
         Text = "Car Escape"
-        CType(basement, ComponentModel.ISupportInitialize).EndInit()
+        CType(road, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
 
-    Friend WithEvents Label1 As Label
-    Friend WithEvents basement As PictureBox
+    Friend WithEvents lblcarescape As Label
+    Friend WithEvents road As PictureBox
 End Class
